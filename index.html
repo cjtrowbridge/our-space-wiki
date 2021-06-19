@@ -196,6 +196,19 @@
             </div><!--/card-body-->
           </div><!--/card-->
         </div><!--/col-md-12-->
+
+        <div class="col-md-12">
+          <div class="card my-4">
+            <div class="card-body">
+              <div class="card-text">
+                <h2 class="display-1">resolving root hashes from ethereum addresses</h2>
+                <p>This is the really hard part of the project. Everyone will be constantly updating our root hashses any time anything changes. Getting that new root hash to your followers in a way that is totally distributed and nonhierarchical is a really challenging problem. Distributed naming systems are certainly not a perfectly solved problem yet but lots of people are working on solutions. I think we can use all of these solutions or whichever one we prefer.</p>
+                <p>One idea I have experimented with during my research for this project has been building a custom DHT network built into the apps people will use to access the network, or built into a distributed service worker on a web page. But there are lots of solutions already in place, and there's no reason not to just use them all.</p>
+                <p>Call it round-robin resolution. Publish your changes to the <a href="https://docs.ipfs.io/concepts/ipns/" target="_blank">Interplanetary Name System</a>, the <a href="https://medium.com/the-ethereum-name-service" target="_blank">Ethereum Name System</a>, <a href="https://docs.ipfs.io/concepts/dnslink/" target="_blank">DNSLink</a>, etc. Just use them all and then whichever one returns an answer first is what we use. This will certainly get better as we move forward, but it works fine for now.</p>              
+              </div><!--/card-text-->
+            </div><!--/card-body-->
+          </div><!--/card-->
+        </div><!--/col-md-12-->
         
       </div><!--/row-->
     </div><!--/container-->  
