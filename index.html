@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A description of the our-space project's methods and goals.">
+    <meta name="author" content="CJ Trowbridge">
+    <title>our-space.wiki</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="/css/global.css">
+    <style>
+      
+      img.big{
+        width: 100%;
+        max-width: 100%;
+        border-radius: 1em;
+        margin-bottom: 1.5rem;
+      }
+      body{
+        background-color: #F8F8F8;
+      }
+
+    </style>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/jpg" href="/cj.jpg">
+    
+  </head>
+  <body>
+    
+    <div class="container">
+      
+      <div class="row" data-masonry='{"percentPosition": true }'>
+        
+        <div class="col-md-6">
+          <div class="card my-4">
+            <div class="card-body">
+              <div class="card-text">
+                <h1 class="display-1">our-space</h1>
+                <p>A description of the our-space project's methods and goals.</p>
+                <div class="mt-4"><style>.bmc-button img{height: 34px !important;width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 10px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#FFFFFF !important;background-color:#FF813F !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 10px 7px 10px !important;font-size: 20px !important;letter-spacing:-0.08px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Lato', sans-serif !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#FFFFFF !important;}</style><link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/cjtrowbridge"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:15px;font-size:19px !important;">Buy me a coffee</span></a></div>
+              </div><!--/card-text-->
+            </div><!--/card-body-->
+          </div><!--/card-->
+        </div><!--/col-md-6-->
+        
+        <div class="col-md-6">
+          <div class="card my-4">
+            <div class="card-body">
+              <div class="card-text">
+                <h2 class="display-1">What is it?</h2>
+                <p>our-space is a totally free, distributed, open-source, non-hierarchical, trustless, peer-to-peer social media alternative.</p>
+              </div><!--/card-text-->
+            </div><!--/card-body-->
+          </div><!--/card-->
+        </div><!--/col-md-6-->
+        
+        <div class="col-md-6">
+          <div class="card my-4">
+            <div class="card-body">
+              <div class="card-text">
+                <h2 class="display-1">how does it work?</h2>
+                <p>User accounts are identified by an ethereum wallet address. This can be resolved in any number of ways or simply shared directly.</p>
+                <p>A distributed hash table contains a list of ethereum wallet addresses plus their current root hash, the timestamp for when it was published, and an ethereum signature from the user's address to verify these facts.</p>
+                <p>Each user has a root hash corresponding to a json object they publish on IPFS and representing the current state of that user's public profile.</p>
+                <p>
+                  The root hash json object contains these things;
+                  <ul>
+                    <li>Etereum address for this user</li>
+                    <li>Signature for the data</li>
+                    <li>Data
+                      <ul>
+                        <li>Date published</li>
+                        <li>IPFS hash for the user's current meta object.</li>
+                        <li>IPFS hash for the user's current following object.</li>
+                        <li>IPFS hash for the user's current feed object.</li>
+                        <li>IPFS hash for the user's current outbox object.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </p>
+              </div><!--/card-text-->
+            </div><!--/card-body-->
+          </div><!--/card-->
+        </div><!--/col-md-6-->
+      
+      
+        <div class="col-md-6">
+          <div class="card my-4">
+            <div class="card-body">
+              <div class="card-text">
+                <h2 class="display-1">meta object</h2>
+                <p>Each user has a meta object containing whatever they want, but at a minimum containing the following things;
+                  <ul>
+                    <li>Etereum address for this user</li>
+                    <li>Signature for the data</li>
+                    <li>Data
+                      <ul>
+                        <li>Date published</li>
+                        <li>Name</li>
+                        <li>Description or bio</li>
+                        <li>Photo</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </p>
+              <p>Any change to the meta object need only be published to IPFS and then the resulting hash is placed into a new root object for the user. The new root hash is published to whatever means of resolution the user wants to use.</p>
+              </div><!--/card-text-->
+            </div><!--/card-body-->
+          </div><!--/card-->
+        </div><!--/col-md-6-->
+      
+        <div class="col-md-6">
+          <div class="card my-4">
+            <div class="card-body">
+              <div class="card-text">
+                <h2 class="display-1">following object</h2>
+                <p>Each user has a following object containing a list of which other users they are following;
+                  <ul>
+                    <li>Etereum address for this user</li>
+                    <li>Signature for the data</li>
+                    <li>Data
+                      <ul>
+                        <li>Date published</li>
+                        <li>Paginated list of ethereum addresses this user is following</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </p>
+              <p>If two users are both following each other, then replies posted between them are automatically approved. Replies to your posts from people you are not following go to your inbox for approval before being posted.</p>
+              </div><!--/card-text-->
+            </div><!--/card-body-->
+          </div><!--/card-->
+        </div><!--/col-md-6-->
+      
+        <div class="col-md-6">
+          <div class="card my-4">
+            <div class="card-body">
+              <div class="card-text">
+                <h2 class="display-1">feed object</h2>
+                <p>Each user has a feed object containing their posts in this format;
+                  <ul>
+                    <li>Etereum address for this user</li>
+                    <li>Signature for the data</li>
+                    <li>Data
+                      <ul>
+                        <li>A paginated list of hashes for replies and their children.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </p>
+                <h2 class="display-1">what are replies?</h2>
+                <p>A reply is a linked tree item containing the following;
+                  <ul> Reply IPFS Hash: the reply is represented by its IPFS hash. 
+                    <li>Etereum address for the signatory user</li>
+                    <li>Signature for the data</li>
+                    <li>Data
+                      <ul>
+                        <li>From: Ethereum address</li>
+                        <li>To: Ethereum address</li>
+                        <li>Timestamp for when this reply was published.</li>
+                        <li>Intended parent hash of this reply. To what are you replying? You can reply to anything that has an IPFS hash. Taking the example of facebook, I could reply to your feed just like you can (Like writing on your wall), or I could reply to your posts, or your comments on a post.</li>
+                        <li>Content of the reply. This could also be a hash to the content if it's something large like a video file.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </p>
+              </div><!--/card-text-->
+            </div><!--/card-body-->
+          </div><!--/card-->
+        </div><!--/col-md-6-->
+      
+        <div class="col-md-6">
+          <div class="card my-4">
+            <div class="card-body">
+              <div class="card-text">
+                <h2 class="display-1">outbox object</h2>
+                <p>Each user has an outbox object linked within their root hash. This contains a list of all the hashes for replies (individually signed) that they would like to send. These are sorted and grouped under their destination ethereum address.</p>
+                <p>If I am following someone and they post a reply to something I post, then that is automatically approved and added as a child to the node they are replying to.</p>
+                <p>If a reply is posted to someone who is not following the person psoting the reply, then it goes to an approval inbox.</p>
+                <p>It seems like it would make sense to have a limit on this so that bobts cant just flood every post. Maybe you can reply to those who are following you, and you can reach the inbox of someone who is a friend of a friend, but beyond that your replies get filtered out.</p>
+                <p>Here is what the outbox object looks like;
+                  <ul>
+                    <li>Etereum address for this user</li>
+                    <li>Signature for the data</li>
+                    <li>Data
+                      <ul>
+                        <li>A paginated list of destination users, each containing a list of nodes intended as replies for those users. (This way, when I check my friends' profiles for updates, I can simply look for anything being sent to me and then attach it to the destination node as a child.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </p>
+              
+              </div><!--/card-text-->
+            </div><!--/card-body-->
+          </div><!--/card-->
+        </div><!--/col-md-6-->
+        
+      </div><!--/row-->
+    </div><!--/container-->  
+  </body>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+  
+  <script src="/js/global.js"></script>
+  
+</html>
