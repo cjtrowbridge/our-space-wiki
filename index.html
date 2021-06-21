@@ -212,7 +212,20 @@
                 <h4>Web Gateways</h4>
                 <p>Most browsers don't support IPFS yet, so we will have to be able to fall back on gateways for IPFS anyway. So why not also use gateways for key resolution? </p>
                 <p>It would be really simple to create a post/get rest api where everyone can post their new hash with a signature. Then verify and store that, and serve it to whoever asks for it. I've done the math and it looks like this would scale in a pretty straightforward and not-resource-intensive way.</p>
-                <p></p>
+              </div><!--/card-text-->
+            </div><!--/card-body-->
+          </div><!--/card-->
+        </div><!--/col-md-12-->
+
+        <div class="col-md-12">
+          <div class="card my-4">
+            <div class="card-body">
+              <div class="card-text">
+                <h2 class="display-1">ipfs considerations</h2>
+                <p>Nothing can ever really be deleted once it's published, so that's something to keep in mind.</p>
+                <p>IP Addresses are public, so including or assuming something like TOR as a substrate might be a good idea if we want to anonymize users' physical addresses.</p>
+                <p>In order to "host" each other's content, everyone should at a minimum automatically "pin" the current state of their friends. This would also accelerate the user experience by pre-loading everything your friends publish so you can just open the app or site and have everything there waiting for you, rather than fetching it once you want to look at it.</p>
+                <p>On that note, one of the most exciting parts of this idea is that it works completely offline. A completely disconnected, off-grid community in the middle of nowhere can use this.</p>
               </div><!--/card-text-->
             </div><!--/card-body-->
           </div><!--/card-->
