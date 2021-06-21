@@ -61,9 +61,8 @@
             <div class="card-body">
               <div class="card-text">
                 <h2 class="display-1">how does it work?</h2>
-                <p>User accounts are identified by an ethereum wallet address. This can be resolved in any number of ways or simply shared directly.</p>
-                <p>A distributed hash table contains a list of ethereum wallet addresses plus their current root hash, the timestamp for when it was published, and an ethereum signature from the user's address to verify these facts.</p>
-                <p>Each user has a root hash corresponding to a json object they publish on IPFS and representing the current state of that user's public profile.</p>
+                <p>User accounts are identified by an ethereum wallet address. This can be resolved in any number of ways or simply shared directly (more on that later).</p>
+                <p>Each user publishes the following json object onto IPFS. This returns a root hash corresponding to the current state of that user's public profile.</p>
                 <p>
                   The root hash json object contains these things;
                   <ul>
