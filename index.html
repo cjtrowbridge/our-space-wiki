@@ -161,8 +161,12 @@
                         <li>To: Ethereum address</li>
                         <li>Timestamp for when this reply was published.</li>
                         <li>Intended parent hash of this reply. To what are you replying? You can reply to anything that has an IPFS hash. Taking the example of facebook, I could reply to your feed just like you can (Like writing on your wall), or I could reply to your posts, or your comments on a post.</li>
+                        <li>Root owner of the top of the tree. Whose original post is this for?</li>
                         <li>Content of the reply. This could also be a hash to the content if it's something large like a video file.</li>
                       </ul>
+                    </li>
+                    <li>
+                      A list of replies to this node by their ipfs hashes. These are loaded from people's outboxes, verified, and approved before being included in this list.
                     </li>
                   </ul>
                 </p>
